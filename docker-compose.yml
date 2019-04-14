@@ -1,0 +1,13 @@
+version: '3'
+services:
+    zlightning:
+        container_name: Lightning
+        #volumes:
+             # Local Src : Docker Path
+            #- /home/canderson:/
+        build:
+            context: .
+            dockerfile:
+                ./Dockerfile
+        ports:
+            - "3000:3000"
